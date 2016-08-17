@@ -1,4 +1,25 @@
-<form method="post" action="https://www.donate.rmhc-ctx.org/donatetoday"  id="form1">
+<form name="epayform" action="[UMformURL]" method="POST" onSubmit="document.epayform.submitbutton.value='Please Wait... Processing';" autocomplete="off"  id="form1">
+  <input type="hidden" name="UMsubmit" value="1">
+  <input type="hidden" name="UMkey" value="[UMkey]">
+  <input type="hidden" name="UMredirDeclined" value="[UMredirDeclined]">
+  <input type="hidden" name="UMredirApproved" value="[UMredirApproved]">
+  <input type="hidden" name="UMhash" value="[UMhash]">
+  <input type="hidden" name="UMcommand" value="[UMcommand]">
+  <input type="hidden" name="UMamount" value="[UMamount]">
+  <input type="hidden" name="UMtax" value="[UMtax]">
+  <input type="hidden" name="UMinvoice" value="[UMinvoice]">
+  <input type="hidden" name="UMcustid" value="[UMcustid]">
+  <input type="hidden" name="UMrecurring" value="[UMrecurring]">
+  <input type="hidden" name="UMaddcustomer" value="[UMaddcustomer]">
+  <input type="hidden" name="UMbillamount" value="[UMbillamount]">
+  <input type="hidden" name="UMcustreceipt" value="yes">
+  <input type="hidden" name="UMschedule" value="[UMschedule]">
+  <input type="hidden" name="UMnumleft" value="[UMnumleft]">
+  <input type="hidden" name="UMstart" value="[UMstart]">
+  <input type="hidden" name="UMexpire" value="[UMexpire]">
+  <input type="hidden" name="UMdescription" value="[UMdescription]">
+  <input type="hidden" name="UMechofields" value="[UMechofields]">
+  <input type="hidden" name="UMformString" value="[UMformString]">
     <div id="background">
         <div id="internal" class="container">
             <div id="wrapContentOuter" class="clearfix">
@@ -10,7 +31,12 @@
                                 <div id="PC5790_UpdatePanel" style="display: block;">
 
                                     <input name="PC5790$HiddenID" type="hidden" id="PC5790_HiddenID">
+                                    <tr >
+                                      <td>
+                                        <img style="position:relative; left: -19.5em;" src="https://httpsimage.com/img/Screen Shot 2016-08-16 at 23.10.54.png" >
 
+                                      </td>
+                                    </tr>
                                     <div id="PC5790_pnlDonationForm">
                                         <table class="BBFormTable DonationFormTable">
                                             <tbody>
@@ -38,6 +64,7 @@
                                                     </td>
 
                                                 </tr>
+
                                                 <tr style="display: none;">
                                                     <td class="BBListingHeading DonationListingHeading" colspan="2">
                                                         <span id="PC5790_lblPersonal">Donation Information</span>
@@ -54,7 +81,7 @@
                                             </tr>
                                             <tr>
                                                 <td colspan="2">
-                                                    <ul id="amtbuttons">
+                                                    <ul id="amtbuttons" style="display:inline-table">
                                                         <li><a class="dollaramt" data-amt="25">$25</a>
                                                         </li>
                                                         <li><a class="dollaramt" data-amt="50">$50</a>
@@ -68,6 +95,7 @@
                                                         <li><a class="dollaramt" data-amt="NaN" id="dollamtother">Other<input name="other" maxlength="30" type="text" id="other"></a>
                                                         </li>
                                                     </ul>
+                                                    <span id="addText"></span>
                                                 </td>
                                             </tr>
                                             <tr id="designation-radios">
@@ -97,14 +125,14 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <!-- <tr>
                                                 <td colspan="3">
                                                     <div class="fc-message">
-                                                        <span>Want to create a recurring gift for Ronald McDonald House Charities of Central Texas?  </span>
+                                                        <span style="color:transparent">Want to create a recurring gift for Ronald McDonald House Charities of Central Texas?  </span>
 
                                                     </div>
                                                 </td>
-                                            </tr>
+                                            </tr> -->
 
                                             <tbody class="BBFormTable DonationCaptureFormTable">
                                                 <tr>
@@ -713,7 +741,7 @@
                                                 <tr class="fc-row">
                                                     <td class="BBFormButtonCell DonationButtonCell" colspan="3">
 
-                                                        <input type="submit" name="PC5790$btnNext" value="DONATE" id="PC5790_btnNext" class="BBFormSubmitButton DonationSubmitButton">
+                                                        <input type="submit" name="submitbutton" value="DONATE" id="PC5790_btnNext" class="BBFormSubmitButton DonationSubmitButton">
                                                     </td>
                                                 </tr>
 
