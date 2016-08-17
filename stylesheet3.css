@@ -1,0 +1,392 @@
+.singleContentColumn, .mainContent {
+  max-width: 903px;
+  margin: 40px auto 0 auto;
+  position: relative; }
+
+table {
+  margin-left: 0 !important; }
+
+.donate-icon {
+  content: url('//www.donate.rmhc-ctx.org/image/2014-Design/donate_icon.png'); }
+
+.thanks-icon {
+  content: url('//www.donate.rmhc-ctx.org/image/2014-Design/thankyouicon.png'); }
+
+#designation-radios {
+  border-top: 50px solid white;
+  border-bottom: 50px solid white; }
+
+input[type="checkbox"] {
+  margin-left: 3px; }
+
+input[type="button"], input[type="submit"], input[type="reset"], input[type="file"]::-webkit-file-upload-button, button {
+  -webkit-box-align: center;
+  text-align: center;
+  cursor: default;
+  color: buttontext;
+  padding: 5px 10px;
+  border: none;
+  -webkit-border-image: initial;
+          border-image: initial;
+  box-sizing: border-box; }
+
+input.yellowBtn[type="button"], a.yellowBtn {
+  border: 0;
+  background-color: #ffc829;
+  color: #fff; }
+
+a.yellowBtn {
+  display: inline-block;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0 10px;
+  font: 700 16px/40px Futura, Helvetica, sans-serif;
+  text-align: center; }
+
+input.yellowBtn {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  height: 30px; }
+
+.BBFormTable {
+  border: none; }
+
+#headerInner a {
+  font-size: 15px; }
+
+.BBFormTitle {
+  border: none !important; }
+
+.BBListingTable {
+  border: none !important; }
+
+.BBFormTable a {
+  color: #628ECC;
+  text-decoration: none; }
+
+[id$="_lbTitle"], [id$="_lblEmailListTitle"], h1, .LoginFormTitle, .DonationListingHeading, .DonationCaptureListingHeading, [id$="_lblGivingHistoryTitle"] {
+  background-color: #fff !important;
+  font-size: 26px !important;
+  color: #a5a299 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.12em;
+  font-weight: normal !important; }
+
+[id$="_lbTitle"] {
+  margin-top: 20px;
+  display: block; }
+
+[id$="_lblEmailListTitle"] {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: block;
+  text-align: left;
+  font-size: 16px !important;
+  text-transform: none !important; }
+
+[id$="_cblNewsLetters"] {
+  border: 0 !important;
+  margin-bottom: 10px; }
+
+.GivingHistoryFormTitle {
+  line-height: 50px; }
+
+.DonationFieldCaption, .DonationCaptureFieldCaption {
+  background-color: #fff; }
+
+.ProfileFormTable, .DonationCaptureFormTable tr {
+  max-height: 30px !important;
+  border-bottom: 10px solid #FFF; }
+
+.ProfileFormTable, .DonationCaptureFormTable input, select, textarea {
+  max-width: 240px !important;
+  height: 30px important; }
+
+.fc-label {
+  width: 230px !important;
+  background-color: #8e8b86;
+  color: #fff;
+  text-transform: uppercase;
+  vertical-align: middle;
+  margin-right: 10px; }
+
+.fc-message {
+  text-align: center;
+  margin-bottom: 30px; }
+
+.ProfileFormTable, .DonationCaptureFormTable td:nth-child(2) {
+  width: 10px !important;
+  vertical-align: top; }
+
+.ProfileFormTable, .DonationCaptureFormTable td:nth-child(3) {
+  width: 10px !important;
+  color: #fff; }
+
+[id$="_DonationCapture1_AddressCtl_tdreq_stateUS"] {
+  color: #fff; }
+
+#donatepagetop {
+  width: 100%;
+  height: 160px;
+  background-image: url(//www.donate.rmhc-ctx.org/image/2014-Design/donate_header_bk.png);
+  text-align: center;
+  vertical-align: center; }
+
+#donatepagetopinside {
+  width: 100%;
+  position: relative;
+  top: 0;
+  margin-top: 20px;
+  text-align: center;
+  color: #fff; }
+
+#donatepagetopinside a {
+  color: #ffc829 !important; }
+
+#icon {
+  padding-top: 20px; }
+
+[id$="_trSource"] {
+  display: none; }
+
+input[type="radio"] {
+  width: 20px !important; }
+
+input[type="button"], input[type="submit"] {
+  line-height: 30px;
+  color: #fff !important; }
+
+.BBFormTextArea, textarea, input[type="text"], input[type="password"] {
+  height: 30px;
+  border: 1px solid #8e8b86;
+  color: #A5A299 !important;
+  font-size: 14px !important;
+  line-height: 30px !important;
+  vertical-align: middle !important; }
+
+#eCardsSection tr td {
+  background-image: none !important; }
+
+[id$="_DonationCapture1_cboMonth_input"] {
+  width: 119px !important; }
+
+[id$="_DonationCapture1_cboYear_input"] {
+  width: 119px !important; }
+
+[id$="_DonationCapture1_lblTxtYear"] {
+  display: none; }
+
+[id$="_tblAmount"] {
+  background-color: #fff; }
+
+[id$="_tblAmount"] td:first-child {
+  width: 30px !important;
+  background-color: #fff; }
+
+[id$="_tblAmount"] td:nth-child(2) {
+  width: 70px !important;
+  background-color: #fff; }
+
+.DonationCaptureSelectListNarrow {
+  width: 75px !important; }
+
+.BBFieldControlCell td.customDonationRow {
+  background-color: #fff;
+  width: 100px !important;
+  color: #a5a299 !important; }
+
+.wsNowrap {
+  white-space: normal !important; }
+
+.BBFormRequiredFieldMarker {
+  color: #fff; }
+
+[id$="_lblAmountCaption"] {
+  display: none; }
+
+[id$="_lblLgnCtl89"] {
+  display: block;
+  width: 200px !important; }
+
+[id$="_DonationCapture1_txtCSC"] {
+  width: 60px !important; }
+
+[id$="_txtAmount"] {
+  width: 150px !important; }
+
+[id$="_tdOther"] label {
+  display: none; }
+
+[id$="_trAdditInformation"], .DonationListingHeading {
+  height: 60px !important; }
+
+.DonationTextboxWide {
+  width: 225px !important; }
+
+.radioButton {
+  margin-bottom: 6px; }
+
+.BBListingHeading {
+  border: none;
+  height: 60px !important;
+  vertical-align: middle;
+  color: #68645D !important;
+  text-align: center;
+  padding: 0;
+  margin: 35px 0 -15px 0; }
+
+.singleContentColumn, .mainContent {
+  margin-top: 20px !important;
+  width: 510px;
+  max-width: 510px !important; }
+
+[id$="_UpdatePanel"] {
+  width: 510px;
+  margin: 0 auto; }
+
+.dollaramt {
+  display: block;
+  height: 68px;
+  width: 63px;
+  background-color: #8e8b86;
+  color: #fff !important;
+  font-size: 22px;
+  float: left;
+  margin-right: 5px;
+  text-align: center;
+  line-height: 68px !important;
+  border-radius: 5px;
+  text-decoration: none !important;
+  cursor: pointer; }
+
+.dollaramt:hover {
+  color: #fff !important;
+  text-decoration: none; }
+
+.act {
+  background-color: #ffc829 !important; }
+
+#dollamtother {
+  width: 120px; }
+
+input#other {
+  width: 50px !important; }
+
+#amtbuttons {
+  padding-left: 0;
+  padding-bottom: 0;
+  margin-top: 0; }
+  #amtbuttons li {
+    display: inline-block;
+    cursor: pointer; }
+
+/*#amtbuttons ul li {
+	    display: inline-block;
+	    margin-bottom: -10px;
+	}*/
+.BBFormTextbox, .BBFormTextArea, .BBFormSelectList {
+  margin: 0; }
+
+.fc-label.fc-required {
+  background-image: url(/Users/yurisamoilovski/Desktop/Donation_Form_files/req.png);
+  background-repeat: repeat-y; }
+
+table[id$="_tbMain"] tr, .profileinfotable tr, .fc-row {
+  border-bottom: solid 10px #fff !important; }
+
+.donationaddltext {
+  display: block !important;
+  font-size: 14px !important;
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: none; }
+
+.donationaddltext img {
+  margin-right: 4px; }
+
+.BBFormSubmitButton, [id$="_btnLogout"], [id$="_btnResetPassword"], [id$="_btnForgotPWDUserName"], [id$="_btnLogin"], [id$="_btnNext"] {
+  background-color: #FFC829;
+  border: medium none;
+  border-radius: 5px;
+  color: #FFF;
+  display: inline-block;
+  float: right;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  margin-top: 10;
+  text-align: center;
+  text-transform: uppercase;
+  width: 130px;
+  font-family: 'Futura W01 Book' !important; }
+
+.BBFormSubmitButton {
+  line-height: 30px !important; }
+
+.BBFormSubmitButton, [id$="_btnNext"] {
+  width: 185px; }
+
+/*
+[id$="_btnLogout"],
+	[id$="_btnResetPassword"],
+	[id$="_btnForgotPWDUserName"],
+	[id$="_btnLogin"] {
+	    width: 140px;
+	    margin-top: 20px;
+	    margin-bottom: 10px;
+	    float: right;
+	    line-height: 30px;
+	}
+*/
+label {
+  margin-right: 10px !important; }
+
+[id$="_lblAdditInformation"] {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+/*
+#thanksicon {
+	    position: relative;
+	    top: 434px;
+	}
+*/
+/*
+#thankspagetop {
+	    background-image: url("//www.donate.rmhc-ctx.org/image/2014-Design/thankyouicon.png");
+	    background-position: center;
+	    display: none;
+	    height: 533px;
+	    position: relative;
+	    text-align: center;
+	    width: 100%;
+	}
+*/
+#tooltip {
+  background-color: #fff;
+  font-size: 16px;
+  height: 80px;
+  width: 130px;
+  padding: 10px;
+  color: #a5a299;
+  border: solid 3px #BCB9B3;
+  border-radius: 7px;
+  margin-top: -100px !important;
+  position: absolute; }
+
+#tooltip h3 {
+  font-size: 16px;
+  font-weight: normal; }
+
+#ttarrow {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -17px;
+  left: 60px; }
