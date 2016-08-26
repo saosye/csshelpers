@@ -71,12 +71,14 @@
                                                     </td>
                                                 </tr>
 
+
                                             </tbody>
                                             <tr class="main">
                                                 <td colspan="2">
                                                     <div id="errors"></div>
 
                                                     <div class="BBListingHeading DonationListingHeading title">Select a gift amount</div>
+                                                    <p style="text-align: center;"><strong style="line-height: 1.4;"><span style="line-height: 19.6px; color: #68645d; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;">Want to create a recurring gift for Ronald McDonald House<br></span></strong><strong style="line-height: 1.4;"><span style="line-height: 19.6px; color: #68645d; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;">Charities of Central Texas? Go to our&nbsp;</span><a style="color: #638ecc; text-decoration: underline; line-height: 19.6px; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;" href="https://sandbox.usaepay.com/interface/epayform/_T8mhAwak8K4DUSM158wum22DFg5JeoZ/">Recurring Gift Page</a></strong></p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -117,11 +119,19 @@
                                                     </div>
                                                     <div class="radioButton redDon">
                                                         <input value="105" type="radio" name="tributeType">
-                                                        <label>Red Shoe Society ($1,000)</label>
+                                                        <label>Golf Tournament</label>
                                                     </div>
-                                                    <div class="radioButton challangeDon">
+                                                    <div class="radioButton lights">
                                                         <input value="122" type="radio" name="tributeType">
-                                                        <label>Challenge Grant</label>
+                                                        <label>Lights of Love</label>
+                                                    </div>
+                                                    <div class="radioButton bagLady">
+                                                        <input value="122" type="radio" name="tributeType">
+                                                        <label>Bag Lady Luncheon</label>
+                                                    </div>
+                                                    <div class="radioButton rentDon">
+                                                        <input value="122" type="radio" name="tributeType">
+                                                        <label>Rent Donation</label>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -154,6 +164,25 @@
                                                             <label for="corporateRadioButton">Corporate Donation</label>
                                                         </div>
                                                     </td>
+                                                </tr>
+                                                <tr id=""  class="fc-row displayNone rentDonation">
+                                                  <td id="PC5790_tdAcknowledgeeFirstName" class="BBFieldCaption DonationFieldCaption fc-required fc-label">
+                                                            <label for="PC5790_txtAcknowledgeeFirstName" id="PC5790_lblAcknowledgeeFirstName">Parent Name:</label>
+                                                          </td>
+                                                  <td id="PC5790_tdAcknowledgeeFirstNameControls" class="BBFieldControlCell DonationFieldControlCell">
+                                                            <input name="PC5790$txtAcknowledgeeFirstName" type="text" maxlength="50" id="PC5790_txtAcknowledgeeFirstName" class="BBFormTextbox DonationTextboxWide">
+                                                          </td>
+                                                </tr>
+                                                <tr id="" class="fc-row displayNone rentDonation">
+                                                  <td id="PC5790_tdAcknowledgeeLastName" class="BBFieldCaption DonationFieldCaption fc-required fc-label">
+                                                            <label for="PC5790_txtAcknowledgeeLastName" id="PC5790_lblAcknowledgeeLastName">Child Name:</label>
+                                                          </td>
+                                                  <td id="PC5790_tdAcknowledgeeLastNameControls" class="BBFieldControlCell DonationFieldControlCell">
+                                                            <input name="PC5790$txtAcknowledgeeLastName" type="text" maxlength="50" id="PC5790_txtAcknowledgeeLastName" class="BBFormTextbox DonationTextboxWide">
+                                                          </td>
+                                                  <td class="BBFormRequiredFieldMarker DonationRequiredFieldMarker">
+                                                            *
+                                                          </td>
                                                 </tr>
                                                 <tr id="PC5790_trComments">
                                                     <td class="vaTop BBFieldCaption DonationFieldCaption fc-label">
@@ -415,6 +444,7 @@
 
 
 
+
                                             </tbody>
 
 
@@ -578,18 +608,18 @@
                                                       *
                                                   </td>
                                               </tr>
+                                                <tr id="PC5790_DonationCapture1_trCompany"  class="displayNone company" >
+                                                    <td class="BBFieldCaption DonationCaptureFieldCaption fc-required fc-label">
+                                                        <label for="PC5790_DonationCapture1_txtCompany" id="PC5790_DonationCapture1_lblCompany">Company:</label>
+                                                    </td>
+                                                    <td class="BBFieldControlCell DonationCaptureFieldControlCell">
+                                                        <input name="PC5790$DonationCapture1$txtCompany" style="width:225px !important" type="text" maxlength="60" id="PC5790_DonationCapture1_txtCompany" class="BBFormTextbox DonationCaptureTextboxWide"><span id="PC5790_DonationCapture1_ctl50" style="display:none;"></span>
+                                                    </td>
+                                                    <td class="BBFormRequiredFieldMarker DonationCaptureRequiredFieldMarker">
+                                                        *</td>
+                                                </tr>
 
 
-                                              <tr id="PC5790_DonationCapture1_trCompany"  class="displayNone company" >
-                                                  <td class="BBFieldCaption DonationCaptureFieldCaption fc-required fc-label">
-                                                      <label for="PC5790_DonationCapture1_txtCompany" id="PC5790_DonationCapture1_lblCompany">Company:</label>
-                                                  </td>
-                                                  <td class="BBFieldControlCell DonationCaptureFieldControlCell">
-                                                      <input name="PC5790$DonationCapture1$txtCompany" type="text" maxlength="60" id="PC5790_DonationCapture1_txtCompany" class="BBFormTextbox DonationCaptureTextboxWide"><span id="PC5790_DonationCapture1_ctl50" style="display:none;"></span>
-                                                  </td>
-                                                  <td class="BBFormRequiredFieldMarker DonationCaptureRequiredFieldMarker">
-                                                      *</td>
-                                              </tr>
 
 
 
@@ -639,14 +669,14 @@
                                                     </td>
                                                 </tr>
 
-                                                <tr style="display: none;">
+                                                <!-- <tr style="display: none;">
                                                     <td class="BBFieldCaption DonationFieldCaption fc-label">
                                                         <label for="PC5790_96" id="PC5790_lblLgnCtl96">Honoree or Memorial Name:</label>
                                                     </td>
                                                     <td id="PC5790_ParentControl96" class="taLeft">
                                                         <input name="PC5790$96" type="text" maxlength="250" id="PC5790_96" class="BBFormTextbox LoginFormTextbox">
                                                     </td>
-                                                </tr>
+                                                </tr> -->
                                                 <tr style="display: none;">
                                                     <td class="BBFieldCaption DonationFieldCaption fc-label">
                                                         <label for="PC5790_94" id="PC5790_lblLgnCtl94">Is this gift in honor of someone?:</label>
@@ -684,7 +714,8 @@
                                             </tbody>
 
 
-                                            <tbody id="fc-tribute-section tributecard" class="displayNone tributecard" style="display: table-row-group;">
+
+                                            <tbody id="fc-tribute-section tributecard" class="optout " style="display: table-row-group;">
                                                 <tr>
                                                     <td class="BBListingHeading DonationListingHeading" colspan="3">
                                                         <span id="PC5790_lblTributeHeading">Send A Tribute Card</span>
@@ -723,7 +754,7 @@
           <span id="PC5790_lblTributeSectionDescription"></span>
         </td>
       </tr>
-      <tr id="PC5790_trTributeName" style="display:;" class="fc-row">
+      <tr id="PC5790_trTributeName" style="" class="fc-row tributecard">
   <td id="PC5790_tdTribNameCaption" class="BBFieldCaption DonationFieldCaption fc-required fc-label">
           <label for="PC5790_txtTribute" id="PC5790_lblName">Memorial/Honoree Name:</label>
         </td>
@@ -736,7 +767,7 @@
         </td>
 </tr>
 
-<tr id="PC5790_trTributeFirstName" style="display:none;" class="fc-row">
+<tr id="PC5790_trTributeFirstName" style="" class="fc-row tributecard">
   <td id="PC5790_tdTributeFirstName" class="BBFieldCaption DonationFieldCaption fc-label">
           <label for="PC5790_txtTributeFirstName" id="PC5790_lblTributeFirstName">Fist Name:</label>
         </td>
@@ -744,7 +775,7 @@
           <input name="PC5790$txtTributeFirstName" type="text" maxlength="50" id="PC5790_txtTributeFirstName" class="BBFormTextbox DonationTextboxWide">
         </td>
 </tr>
-<tr id="PC5790_trTributeLastName" style="display:none;" class="fc-row">
+<tr id="PC5790_trTributeLastName"  class="fc-row tributecard">
   <td id="PC5790_tdTributeLastName" class="BBFieldCaption DonationFieldCaption fc-required fc-label">
           <label for="PC5790_txtTributeLastName" id="PC5790_lblTributeLastName">Last name:</label>
         </td>
@@ -796,7 +827,7 @@
         </td>
 
       </tr>
-      <tr id="PC5790_trAcknowledgeeName" style="display:;" class="fc-row">
+      <tr id="PC5790_trAcknowledgeeName" style="" class="fc-row tributecard">
   <td class="BBFieldCaption DonationFieldCaption fc-required fc-label">
             <label for="PC5790_txtTributeAcknFullName" id="PC5790_lblFullNameCaption">Notification To:</label>
           </td>
@@ -807,7 +838,7 @@
             *
           </td>
 </tr>
-<tr id="PC5790_trAcknowledgeeFirstName" style="display:none;" class="fc-row">
+<tr id="PC5790_trAcknowledgeeFirstName" style="display:none;" class="fc-row tributecard">
   <td id="PC5790_tdAcknowledgeeFirstName" class="BBFieldCaption DonationFieldCaption fc-label">
             <label for="PC5790_txtAcknowledgeeFirstName" id="PC5790_lblAcknowledgeeFirstName">First name:</label>
           </td>
@@ -815,7 +846,7 @@
             <input name="PC5790$txtAcknowledgeeFirstName" type="text" maxlength="50" id="PC5790_txtAcknowledgeeFirstName" class="BBFormTextbox DonationTextboxWide">
           </td>
 </tr>
-<tr id="PC5790_trAcknowledgeeLastName" style="display:none;" class="fc-row">
+<tr id="PC5790_trAcknowledgeeLastName" style="display:none;" class="fc-row tributecard">
   <td id="PC5790_tdAcknowledgeeLastName" class="BBFieldCaption DonationFieldCaption fc-required fc-label">
             <label for="PC5790_txtAcknowledgeeLastName" id="PC5790_lblAcknowledgeeLastName">Last name:</label>
           </td>
@@ -827,8 +858,8 @@
           </td>
 </tr>
 
-<tr class="fc-row">
-  <td id="PC5790_AddressCtl_lbl_country" class="BBFieldCaption DonationFieldCaption fc-required fc-label">
+<tr class="fc-row tributecard">
+  <td id="PC5790_AddressCtl_lbl_country" class="BBFieldCaption DonationFieldCaption fc-required fc-label ">
       <label for="PC5790_AddressCtl_dd_Country" id="PC5790_AddressCtl_lblCountry">Country:</label>
   </td>
 
@@ -860,7 +891,7 @@
 </tr>
 
 
-<tr class="fc-row">
+<tr class="fc-row tributecard">
   <td id="PC5790_AddressCtl_lbl_addrline" class="BBFieldCaption DonationFieldCaption fc-required fc-label">
       <label for="PC5790_AddressCtl_tb_AddressLine" id="PC5790_AddressCtl_lblAddressLine">Address lines:</label>
   </td>
@@ -875,7 +906,7 @@
 
 </tr>
 
-  <tr class="fc-row">
+  <tr class="fc-row tributecard">
       <td id="PC5790_AddressCtl_lbl_cityUS" class="BBFieldCaption DonationFieldCaption fc-required fc-label">
           <label for="PC5790_AddressCtl_tb_CityUS" id="PC5790_AddressCtl_lblCityUS">City:</label>
       </td>
@@ -887,7 +918,7 @@
       </td>
 
   </tr>
-  <tr class="fc-row">
+  <tr class="fc-row tributecard">
       <td id="PC5790_AddressCtl_lbl_stateUS" class="BBFieldCaption DonationFieldCaption fc-required fc-label">
           <label for="PC5790_AddressCtl_dd_StateUS" id="PC5790_AddressCtl_lblStateUS">State:</label>
       </td>
@@ -991,7 +1022,7 @@
   </tr>
   <tr class="fc-row">
 </tr>
-<tr class="fc-row">
+<tr class="fc-row tributecard">
   <td id="PC5790_AddressCtl_lbl_zipUS" class="BBFieldCaption DonationFieldCaption fc-required fc-label"><label for="PC5790_AddressCtl_tb_ZipUS" id="PC5790_AddressCtl_lblZipUS">ZIP:</label></td>
   <td id="PC5790_AddressCtl_ctl_zipUS" class="taLeft BBFieldControlCell DonationFieldControlCell"><input name="PC5790$AddressCtl$tb_ZipUS" type="text" maxlength="10" id="PC5790_AddressCtl_tb_ZipUS" class="BBFormTextbox DonationTextbox"></td>
   <td id="PC5790_AddressCtl_lblreq_zipUS" class="BBFormRequiredFieldMarker DonationRequiredFieldMarker">
@@ -1004,7 +1035,7 @@
 
 
 
-        <tr class="fc-row">
+        <tr class="fc-row tributecard">
           <td class="BBFieldCaption DonationFieldCaption fc-label">
             <label for="PC5790_txtTributeAcknPhone" id="PC5790_lblPhoneCaption">Phone:</label>
           </td>
@@ -1012,7 +1043,7 @@
             <input name="PC5790$txtTributeAcknPhone" type="text" maxlength="20" id="PC5790_txtTributeAcknPhone" class="BBFormTextbox DonationTextbox">
           </td>
         </tr>
-        <tr class="fc-row">
+        <tr class="fc-row tributecard">
           <td class="BBFieldCaption DonationFieldCaption fc-label">
             <label for="PC5790_txtTributeAcknEmail" id="PC5790_lblEmailCaption">Email:</label>
           </td>
@@ -1020,6 +1051,8 @@
             <input name="PC5790$txtTributeAcknEmail" type="text" maxlength="100" id="PC5790_txtTributeAcknEmail" class="BBFormTextbox DonationTextboxWide">
           </td>
         </tr>
+
+
 
 
 
