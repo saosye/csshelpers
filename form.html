@@ -5,7 +5,7 @@
   <input type="hidden" name="UMredirApproved" value="[UMredirApproved]"> -->
   <input type="hidden" name="UMhash" value="[UMhash]">
   <input type="hidden" name="UMcommand" value="[UMcommand]">
-  <input type="hidden" name="UMamount" value="[UMamount]">
+  <input type="hidden" name="UMamount" id="amount" value="[UMamount]">
   <input type="hidden" name="UMtax" value="[UMtax]">
   <input type="hidden" name="UMinvoice" value="[UMinvoice]">
   <input type="hidden" name="UMcustid" value="[UMcustid]">
@@ -78,7 +78,7 @@
                                                     <div id="errors"></div>
 
                                                     <div class="BBListingHeading DonationListingHeading title">Select a gift amount</div>
-                                                    <p style="text-align: center;"><strong style="line-height: 1.4;"><span style="line-height: 19.6px; color: #68645d; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;">Want to create a recurring gift for Ronald McDonald House<br></span></strong><strong style="line-height: 1.4;"><span style="line-height: 19.6px; color: #68645d; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;">Charities of Charleston? Go to our&nbsp;</span><a style="color: #638ecc; text-decoration: underline; line-height: 19.6px; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;" href="https://sandbox.usaepay.com/interface/epayform/_T8mhAwak8K4DUSM158wum22DFg5JeoZ/">Recurring Gift Page</a></strong></p>
+                                                    <p style="text-align: center;"><strong style="line-height: 1.4;"><span style="line-height: 19.6px; color: #68645d; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;">Want to create a recurring gift for Ronald McDonald House<br></span></strong><strong style="line-height: 1.4;"><span style="line-height: 19.6px; color: #68645d; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;">Charities of Central Texas? Go to our&nbsp;</span><a style="color: #638ecc; text-decoration: underline; line-height: 19.6px; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;" href="https://sandbox.usaepay.com/interface/epayform/_T8mhAwak8K4DUSM158wum22DFg5JeoZ/">Recurring Gift Page</a></strong></p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -106,31 +106,31 @@
                                                 </td>
                                                 <td class="BBFieldControlCell DonationFieldControlCell">
                                                     <div class="radioButton generalDon">
-                                                        <input value="104" type="radio" name="tributeType" checked="checked">
+                                                        <input value="104" type="radio" name="UMcustom1" value-"General Donation" checked="checked">
                                                         <label>General Donation</label>
                                                     </div>
                                                     <div class="radioButton honorDon">
-                                                        <input value="103" type="radio" name="tributeType">
+                                                        <input value="103" type="radio" name="UMcustom1" value="Donation in Honor Of">
                                                         <label>Donation In Honor Of</label>
                                                     </div>
                                                     <div class="radioButton memoryDon">
-                                                        <input value="106" type="radio" name="tributeType">
+                                                        <input value="106" type="radio" name="UMcustom1" value="Donation in Memory Of">
                                                         <label>Donation In Memory Of</label>
                                                     </div>
                                                     <div class="radioButton redDon">
-                                                        <input value="105" type="radio" name="tributeType">
+                                                        <input value="105" type="radio" name="UMcustom1" value="Golf Tournament">
                                                         <label>Golf Tournament</label>
                                                     </div>
                                                     <div class="radioButton lights">
-                                                        <input value="122" type="radio" name="tributeType">
+                                                        <input value="122" type="radio" name="UMcustom1" value="Lights of Love">
                                                         <label>Lights of Love</label>
                                                     </div>
                                                     <div class="radioButton bagLady">
-                                                        <input value="122" type="radio" name="tributeType">
+                                                        <input value="122" type="radio" name="UMcustom1" value="Bag Lady Luncheon">
                                                         <label>Bag Lady Luncheon</label>
                                                     </div>
                                                     <div class="radioButton rentDon">
-                                                        <input value="122" type="radio" name="tributeType">
+                                                        <input value="122" type="radio" name="UMcustom1" value="Rent Donation">
                                                         <label>Rent Donation</label>
                                                     </div>
                                                 </td>
@@ -138,7 +138,7 @@
                                             <!-- <tr>
                                                 <td colspan="3">
                                                     <div class="fc-message">
-                                                        <span style="color:transparent">Want to create a recurring gift for Ronald McDonald House Charities of Charleston?  </span>
+                                                        <span style="color:transparent">Want to create a recurring gift for Ronald McDonald House Charities of Central Texas?  </span>
 
                                                     </div>
                                                 </td>
@@ -156,11 +156,11 @@
                                                     </td>
                                                     <td class="BBFieldControlCell DonationFieldControlCell">
                                                         <div class="radioButton individualRadioButton" >
-                                                            <input class="individualRadioButton" type="radio" name="donationType"  value="individualGift" checked="checked">
+                                                            <input class="individualRadioButton" type="radio" name="UMcustom2"  value="individualGift" checked="checked">
                                                             <label for="individualRadioButton">Individual Donation</label>
                                                         </div>
                                                         <div class="radioButton corporateRadioButton" >
-                                                            <input class="corporateRadioButton" type="radio" name="donationType"  value="corporateGift" >
+                                                            <input class="corporateRadioButton" type="radio" name="UMcustom2"  value="corporateGift" >
                                                             <label for="corporateRadioButton">Corporate Donation</label>
                                                         </div>
                                                     </td>
@@ -170,7 +170,7 @@
                                                             <label for="PC5790_txtAcknowledgeeFirstName" id="PC5790_lblAcknowledgeeFirstName">Parent Name:</label>
                                                           </td>
                                                   <td id="PC5790_tdAcknowledgeeFirstNameControls" class="BBFieldControlCell DonationFieldControlCell">
-                                                            <input name="PC5790$txtAcknowledgeeFirstName" type="text" maxlength="50" id="PC5790_txtAcknowledgeeFirstName" class="BBFormTextbox DonationTextboxWide">
+                                                            <input name="UMcustom3" value="" type="text" maxlength="50" id="PC5790_txtAcknowledgeeFirstName" class="BBFormTextbox DonationTextboxWide">
                                                           </td>
                                                 </tr>
                                                 <tr id="" class="fc-row displayNone rentDonation">
@@ -178,7 +178,7 @@
                                                             <label for="PC5790_txtAcknowledgeeLastName" id="PC5790_lblAcknowledgeeLastName">Child Name:</label>
                                                           </td>
                                                   <td id="PC5790_tdAcknowledgeeLastNameControls" class="BBFieldControlCell DonationFieldControlCell">
-                                                            <input name="PC5790$txtAcknowledgeeLastName" type="text" maxlength="50" id="PC5790_txtAcknowledgeeLastName" class="BBFormTextbox DonationTextboxWide">
+                                                            <input name="UMcustom4" value="" type="text" maxlength="50" id="PC5790_txtAcknowledgeeLastName" class="BBFormTextbox DonationTextboxWide">
                                                           </td>
                                                   <td class="BBFormRequiredFieldMarker DonationRequiredFieldMarker">
                                                             *
@@ -189,7 +189,7 @@
                                                         <label for="PC5790_txtComments" id="PC5790_lblCommentsCaption">Comments:</label>
                                                     </td>
                                                     <td colspan="2">
-                                                        <textarea name="PC5790$txtComments" rows="2" cols="20" id="PC5790_txtComments" class="BBFormTextArea DonationTextArea"></textarea>
+                                                        <textarea name="UMcomments" rows="2" cols="20" id="PC5790_txtComments" class="BBFormTextArea DonationTextArea"></textarea>
                                                     </td>
                                                 </tr>
 
@@ -198,14 +198,14 @@
                                                         <label for="PC5790_DonationCapture1_cboTitle" id="PC5790_DonationCapture1_lblTitle1">Title:</label>
                                                     </td>
                                                     <td class="BBFieldControlCell DonationCaptureFieldControlCell">
-                                                        <select name="PC5790$DonationCapture1$cboTitle" id="PC5790_DonationCapture1_cboTitle" class="BBFormSelectList DonationCaptureSelectList" style="height: 30px; width: 250px; border: 1px solid rgb(142, 139, 134); padding: 3px 0px 0px 2px; cursor: pointer; color: rgb(104, 100, 93); border-radius: 0px; background-color: rgb(255, 255, 255);">
+                                                        <select name="UMcustom5" id="PC5790_DonationCapture1_cboTitle" class="BBFormSelectList DonationCaptureSelectList" style="height: 30px; width: 250px; border: 1px solid rgb(142, 139, 134); padding: 3px 0px 0px 2px; cursor: pointer; color: rgb(104, 100, 93); border-radius: 0px; background-color: rgb(255, 255, 255);">
                                                             <option selected="selected" value=""></option>
-                                                            <option value="4">Dr.</option>
-                                                            <option value="343">Family of</option>
-                                                            <option value="1">Mr.</option>
-                                                            <option value="860">Mr. and Mrs.</option>
-                                                            <option value="3">Mrs.</option>
-                                                            <option value="2">Ms.</option>
+                                                            <option value="Dr.">Dr.</option>
+                                                            <option value="Family of">Family of</option>
+                                                            <option value="Mr.">Mr.</option>
+                                                            <option value="Mr. and Mrs.">Mr. and Mrs.</option>
+                                                            <option value="Mrs.">Mrs.</option>
+                                                            <option value="Ms.">Ms.</option>
 
                                                         </select>
                                                     </td>
@@ -216,7 +216,7 @@
                                                         <label for="PC5790_DonationCapture1_txtFirstName" id="PC5790_DonationCapture1_lblFirstName">First name:</label>
                                                     </td>
                                                     <td class="BBFieldControlCell DonationCaptureFieldControlCell">
-                                                        <input name="PC5790$DonationCapture1$txtFirstName" type="text" maxlength="30" id="PC5790_DonationCapture1_txtFirstName" class="BBFormTextbox DonationCaptureTextboxWide">
+                                                        <input name="UMbillfname" type="text" maxlength="30" id="PC5790_DonationCapture1_txtFirstName" class="BBFormTextbox DonationCaptureTextboxWide">
                                                     </td>
                                                     <td id="PC5790_DonationCapture1_tdReqFirst" class="BBFormRequiredFieldMarker DonationCaptureRequiredFieldMarker">
                                                         *</td>
@@ -228,7 +228,7 @@
                                                         <label for="PC5790_DonationCapture1_txtLastName" id="PC5790_DonationCapture1_lblLastName">Last name:</label>
                                                     </td>
                                                     <td class="BBFieldControlCell DonationCaptureFieldControlCell">
-                                                        <input name="PC5790$DonationCapture1$txtLastName" type="text" maxlength="60" id="PC5790_DonationCapture1_txtLastName" class="BBFormTextbox DonationCaptureTextboxWide">
+                                                        <input name="UMbilllname" type="text" maxlength="60" id="PC5790_DonationCapture1_txtLastName" class="BBFormTextbox DonationCaptureTextboxWide">
                                                     </td>
                                                     <td class="BBFormRequiredFieldMarker DonationCaptureRequiredFieldMarker">
                                                         *</td>
@@ -238,7 +238,7 @@
                                                         <label for="PC5790_DonationCapture1_txtCompany" id="PC5790_DonationCapture1_lblCompany">Company:</label>
                                                     </td>
                                                     <td class="BBFieldControlCell DonationCaptureFieldControlCell">
-                                                        <input name="PC5790$DonationCapture1$txtCompany" type="text" maxlength="60" id="PC5790_DonationCapture1_txtCompany" class="BBFormTextbox DonationCaptureTextboxWide"><span id="PC5790_DonationCapture1_ctl50" style="display:none;"></span>
+                                                        <input name="UMbillcompany" type="text" maxlength="60" id="PC5790_DonationCapture1_txtCompany" class="BBFormTextbox DonationCaptureTextboxWide"><span id="PC5790_DonationCapture1_ctl50" style="display:none;"></span>
                                                     </td>
                                                     <td class="BBFormRequiredFieldMarker DonationCaptureRequiredFieldMarker">
                                                         *</td>
@@ -254,7 +254,7 @@
                                                     </td>
 
                                                     <td id="PC5790_DonationCapture1_AddressCtl_ctl_addrline" class="taLeft BBFieldControlCell DonationCaptureFieldControlCell">
-                                                        <textarea name="PC5790$DonationCapture1$AddressCtl$tb_AddressLine" rows="2" cols="20" id="PC5790_DonationCapture1_AddressCtl_tb_AddressLine" class="BBFormTextArea DonationCaptureTextArea"></textarea>
+                                                        <textarea name="UMbillstreet" rows="2" cols="20" id="PC5790_DonationCapture1_AddressCtl_tb_AddressLine" class="BBFormTextArea DonationCaptureTextArea"></textarea>
                                                     </td>
 
                                                     <td id="PC5790_DonationCapture1_AddressCtl_lblreq_addrline" valign="top" class="BBFormRequiredFieldMarker DonationCaptureRequiredFieldMarker">
@@ -268,7 +268,7 @@
                                                         <label for="PC5790_DonationCapture1_AddressCtl_tb_CityUS" id="PC5790_DonationCapture1_AddressCtl_lblCityUS">City:</label>
                                                     </td>
                                                     <td id="PC5790_DonationCapture1_AddressCtl_ctl_cityUS" class="taLeft BBFieldControlCell DonationCaptureFieldControlCell">
-                                                        <input name="PC5790$DonationCapture1$AddressCtl$tb_CityUS" type="text" maxlength="50" id="PC5790_DonationCapture1_AddressCtl_tb_CityUS" class="BBFormTextbox DonationCaptureTextbox">
+                                                        <input name="UMbillcity" type="text" maxlength="50" id="PC5790_DonationCapture1_AddressCtl_tb_CityUS" class="BBFormTextbox DonationCaptureTextbox">
                                                     </td>
                                                     <td id="PC5790_DonationCapture1_AddressCtl_lblreq_cityUS" class="BBFormRequiredFieldMarker DonationCaptureRequiredFieldMarker">
                                                         *
@@ -280,7 +280,7 @@
                                                         <label for="PC5790_DonationCapture1_AddressCtl_dd_StateUS" id="PC5790_DonationCapture1_AddressCtl_lblStateUS">State:</label>
                                                     </td>
                                                     <td id="PC5790_DonationCapture1_AddressCtl_ctl_stateUS" class="taLeft BBFieldControlCell DonationCaptureFieldControlCell">
-                                                        <select name="PC5790$DonationCapture1$AddressCtl$dd_StateUS" id="PC5790_DonationCapture1_AddressCtl_dd_StateUS" class="BBFormSelectList DonationCaptureSelectList" style="height: 30px; width: 250px; border: 1px solid rgb(142, 139, 134); padding: 3px 0px 0px 2px; cursor: pointer; color: rgb(104, 100, 93); border-radius: 0px; background-color: rgb(255, 255, 255);">
+                                                        <select name="UMbillstate" id="PC5790_DonationCapture1_AddressCtl_dd_StateUS" class="BBFormSelectList DonationCaptureSelectList" style="height: 30px; width: 250px; border: 1px solid rgb(142, 139, 134); padding: 3px 0px 0px 2px; cursor: pointer; color: rgb(104, 100, 93); border-radius: 0px; background-color: rgb(255, 255, 255);">
                                                             <option selected="selected" value="-1">&lt;Please Select&gt;</option>
                                                             <option value="VE">VE</option>
                                                             <option value="AA">AA</option>
@@ -385,7 +385,7 @@
                                                     </td>
 
                                                     <td id="PC5790_DonationCapture1_AddressCtl_ctl_Country" class="taLeft BBFieldControlCell DonationCaptureFieldControlCell">
-                                                        <select name="PC5790$DonationCapture1$AddressCtl$dd_Country" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;PC5790$DonationCapture1$AddressCtl$dd_Country\&#39;,\&#39;\&#39;)&#39;, 0)" id="PC5790_DonationCapture1_AddressCtl_dd_Country" class="BBFormSelectList DonationCaptureSelectList" style="height: 30px; width: 250px; border: 1px solid rgb(142, 139, 134); padding: 3px 0px 0px 2px; cursor: pointer; color: rgb(104, 100, 93); border-radius: 0px; background-color: rgb(255, 255, 255);">
+                                                        <select name="UMbillcountry" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;PC5790$DonationCapture1$AddressCtl$dd_Country\&#39;,\&#39;\&#39;)&#39;, 0)" id="PC5790_DonationCapture1_AddressCtl_dd_Country" class="BBFormSelectList DonationCaptureSelectList" style="height: 30px; width: 250px; border: 1px solid rgb(142, 139, 134); padding: 3px 0px 0px 2px; cursor: pointer; color: rgb(104, 100, 93); border-radius: 0px; background-color: rgb(255, 255, 255);">
                                                             <option value="Cambodia">Cambodia</option>
                                                             <option value="China">China</option>
                                                             <option value="GUATEMALA">GUATEMALA</option>
@@ -415,7 +415,7 @@
                                                         <label for="PC5790_DonationCapture1_AddressCtl_tb_ZipUS" id="PC5790_DonationCapture1_AddressCtl_lblZipUS">ZIP:</label>
                                                     </td>
                                                     <td id="PC5790_DonationCapture1_AddressCtl_ctl_zipUS" class="taLeft BBFieldControlCell DonationCaptureFieldControlCell">
-                                                        <input name="PC5790$DonationCapture1$AddressCtl$tb_ZipUS" type="text" maxlength="10" id="PC5790_DonationCapture1_AddressCtl_tb_ZipUS" class="BBFormTextbox DonationCaptureTextbox">
+                                                        <input name="UMbillzip" type="text" maxlength="10" id="PC5790_DonationCapture1_AddressCtl_tb_ZipUS" class="BBFormTextbox DonationCaptureTextbox">
                                                     </td>
                                                     <td id="PC5790_DonationCapture1_AddressCtl_lblreq_zipUS" class="BBFormRequiredFieldMarker DonationCaptureRequiredFieldMarker">
                                                         *
@@ -426,7 +426,7 @@
                                                         <label for="PC5790_DonationCapture1_txtPhone" id="PC5790_DonationCapture1_lblPhone">Phone:</label>
                                                     </td>
                                                     <td class="BBFieldControlCell DonationCaptureFieldControlCell">
-                                                        <input name="PC5790$DonationCapture1$txtPhone" type="text" maxlength="20" id="PC5790_DonationCapture1_txtPhone" class="BBFormTextbox DonationCaptureTextbox">
+                                                        <input name="UMbillphone" type="text" maxlength="20" id="PC5790_DonationCapture1_txtPhone" class="BBFormTextbox DonationCaptureTextbox">
                                                     </td>
                                                     <td id="PC5790_DonationCapture1_tdReqPhone" class="BBFormRequiredFieldMarker DonationCaptureRequiredFieldMarker">
                                                         *</td>
@@ -437,7 +437,7 @@
                                                         <label for="PC5790_DonationCapture1_txtEmail" id="PC5790_DonationCapture1_lblEmail">Email:</label>
                                                     </td>
                                                     <td class="BBFieldControlCell DonationCaptureFieldControlCell">
-                                                        <input name="PC5790$DonationCapture1$txtEmail" type="text" maxlength="100" id="PC5790_DonationCapture1_txtEmail" class="BBFormTextbox DonationCaptureTextboxWide"><span id="PC5790_DonationCapture1_ctl51" style="display:none;"></span><span id="PC5790_DonationCapture1_ctl65" style="display:none;"></span>
+                                                        <input name="UMemail" type="text" maxlength="100" id="PC5790_DonationCapture1_txtEmail" class="BBFormTextbox DonationCaptureTextboxWide"><span id="PC5790_DonationCapture1_ctl51" style="display:none;"></span><span id="PC5790_DonationCapture1_ctl65" style="display:none;"></span>
                                                     </td>
                                                     <td id="PC5790_DonationCapture1_tdEmailReq" class="BBFormRequiredFieldMarker DonationCaptureRequiredFieldMarker">*</td>
                                                 </tr>
@@ -464,7 +464,7 @@
                                                         <label for="PC5790_DonationCapture1_txtCardholder" id="PC5790_DonationCapture1_lblCardHoldersName">Cardholder's Name:</label>
                                                     </td>
                                                     <td class="BBFieldControlCell DonationCaptureFieldControlCell">
-                                                        <input name="PC5790$DonationCapture1$txtCardholder" type="text" maxlength="60" id="PC5790_DonationCapture1_txtCardholder" class="BBFormTextbox DonationCaptureTextboxWide">
+                                                        <input name="UMname" type="text" maxlength="60" id="PC5790_DonationCapture1_txtCardholder" class="BBFormTextbox DonationCaptureTextboxWide">
                                                     </td>
                                                     <td class="BBFormRequiredFieldMarker DonationCaptureRequiredFieldMarker">
                                                         *</td>
@@ -474,7 +474,7 @@
                                                         <label for="PC5790_DonationCapture1_txtCardNumber" id="PC5790_DonationCapture1_lblCCNumber">Credit Card Number:</label>
                                                     </td>
                                                     <td class="BBFieldControlCell DonationCaptureFieldControlCell">
-                                                        <input name="PC5790$DonationCapture1$txtCardNumber" type="text" maxlength="20" id="PC5790_DonationCapture1_txtCardNumber" class="BBFormTextbox DonationCaptureTextboxWide" autocomplete="off">
+                                                        <input name="UMcard" type="text" maxlength="20" id="PC5790_DonationCapture1_txtCardNumber" class="BBFormTextbox DonationCaptureTextboxWide" autocomplete="off">
                                                     </td>
                                                     <td class="BBFormRequiredFieldMarker DonationCaptureRequiredFieldMarker">
                                                         *</td>
@@ -506,7 +506,7 @@
                                                             <tbody>
                                                                 <tr>
                                                                     <td class="fc-required">
-                                                                        <select name="PC5790$DonationCapture1$cboMonth" id="PC5790_DonationCapture1_cboMonth" class="BBFormSelectList DonationCaptureSelectListNarrow" style="height: 30px; width: 250px; border: 1px solid rgb(142, 139, 134); padding: 3px 0px 0px 2px; cursor: pointer; color: rgb(104, 100, 93); border-radius: 0px; background-color: rgb(255, 255, 255);">
+                                                                        <select name="UMexpir" id="PC5790_DonationCapture1_cboMonth" class="BBFormSelectList DonationCaptureSelectListNarrow" style="height: 30px; width: 250px; border: 1px solid rgb(142, 139, 134); padding: 3px 0px 0px 2px; cursor: pointer; color: rgb(104, 100, 93); border-radius: 0px; background-color: rgb(255, 255, 255);">
                                                                             <option selected="selected" value=""></option>
                                                                             <option value="1">01</option>
                                                                             <option value="2">02</option>
@@ -558,7 +558,7 @@
                                                         <label for="PC5790_DonationCapture1_txtCSC" id="PC5790_DonationCapture1_lblSecCode">Card Security Code:</label>
                                                     </td>
                                                     <td class="BBFieldControlCell DonationCaptureFieldControlCell">
-                                                        <input name="PC5790$DonationCapture1$txtCSC" type="text" maxlength="4" id="PC5790_DonationCapture1_txtCSC" class="BBFormTextbox DonationCaptureTextboxNarrow" autocomplete="off"><a id="PC5790_DonationCapture1_lnkcsc_help" title="Display help for Card Security Codes in another window" class="BBLinkHelpIcon" href="javascript:DonationCSCHelp()">What's this</a>
+                                                        <input name="UMcvv2" type="text" maxlength="4" id="PC5790_DonationCapture1_txtCSC" class="BBFormTextbox DonationCaptureTextboxNarrow" autocomplete="off"><a id="PC5790_DonationCapture1_lnkcsc_help" title="Display help for Card Security Codes in another window" class="BBLinkHelpIcon" href="javascript:DonationCSCHelp()">What's this</a>
                                                     </td>
                                                     <td class="BBFormRequiredFieldMarker DonationCaptureRequiredFieldMarker">
                                                         *</td>
@@ -571,7 +571,7 @@
                                                         <label for="PC5790_174" id="PC5790_lblLgnCtl174">Mailed Receipt:</label>
                                                     </td>
                                                     <td id="PC5790_ParentControl174" class="taLeft">
-                                                        <select name="PC5790$174" id="PC5790_174" class="BBFormSelectList LoginFormSelectList" style="height: 30px; width: 250px; border: 1px solid rgb(142, 139, 134); padding: 3px 0px 0px 2px; cursor: pointer; color: rgb(104, 100, 93); border-radius: 0px; background-color: rgb(255, 255, 255);">
+                                                        <select name="UMcustreceipt" id="PC5790_174" class="BBFormSelectList LoginFormSelectList" style="height: 30px; width: 250px; border: 1px solid rgb(142, 139, 134); padding: 3px 0px 0px 2px; cursor: pointer; color: rgb(104, 100, 93); border-radius: 0px; background-color: rgb(255, 255, 255);">
                                                             <option selected="selected" value="&lt;Please select&gt;">&lt;Please select&gt;</option>
                                                             <option value="Yes">Yes</option>
                                                             <option value="No">No</option>
