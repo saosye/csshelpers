@@ -1,11 +1,11 @@
-<form name="epayform" action="https://sandbox.usaepay.com/gate.php" method="POST" onSubmit="document.epayform.submitbutton.value='Please Wait... Processing';" autocomplete="off"  id="form1">
+<form name="epayform" action="https://sandbox.usaepay.com/gate.php" onsubmit="return validateForm()" method="POST" onSubmit="document.epayform.submitbutton.value='Please Wait... Processing';" autocomplete="off"  id="form1">
   <input type="hidden" name="UMsubmit" value="1">
   <input type="hidden" name="UMkey" value="_DL71B99aNVq61409lP2XY4pW109TOcf">
   <!-- <input type="hidden" name="UMredirDeclined" value="[UMredirDeclined]">
   <input type="hidden" name="UMredirApproved" value="[UMredirApproved]"> -->
   <input type="hidden" name="UMhash" value="[UMhash]">
   <input type="hidden" name="UMcommand" value="[UMcommand]">
-  <input type="hidden" name="UMamount" id="amount" value="3">
+  <input type="hidden" name="UMamount" id="amount" value="[UMamount]">
   <input type="hidden" name="UMtax" value="[UMtax]">
   <input type="hidden" name="UMinvoice" value="[UMinvoice]">
   <input type="hidden" name="UMcustid" value="[UMcustid]">
@@ -16,7 +16,7 @@
   <input type="hidden" name="UMschedule" value="[UMschedule]">
   <input type="hidden" name="UMnumleft" value="[UMnumleft]">
   <input type="hidden" name="UMstart" value="[UMstart]">
-  <input type="hidden" name="UMexpire" value="[UMexpire]">
+  <input type="hidden" name="UMexpire" id="expire" value="[UMexpire]">
   <input type="hidden" name="UMdescription" value="[UMdescription]">
   <input type="hidden" name="UMechofields" value="[UMechofields]">
   <input type="hidden" name="UMformString" value="[UMformString]">
@@ -506,7 +506,7 @@
                                                             <tbody>
                                                                 <tr>
                                                                     <td class="fc-required">
-                                                                        <select name="UMexpir" id="PC5790_DonationCapture1_cboMonth" class="BBFormSelectList DonationCaptureSelectListNarrow" style="height: 30px; width: 250px; border: 1px solid rgb(142, 139, 134); padding: 3px 0px 0px 2px; cursor: pointer; color: rgb(104, 100, 93); border-radius: 0px; background-color: rgb(255, 255, 255);">
+                                                                        <select name="" id="month" class="BBFormSelectList DonationCaptureSelectListNarrow" style="height: 30px; width: 250px; border: 1px solid rgb(142, 139, 134); padding: 3px 0px 0px 2px; cursor: pointer; color: rgb(104, 100, 93); border-radius: 0px; background-color: rgb(255, 255, 255);">
                                                                             <option selected="selected" value=""></option>
                                                                             <option value="1">01</option>
                                                                             <option value="2">02</option>
@@ -525,7 +525,7 @@
                                                                         <label for="PC5790_DonationCapture1_cboYear" id="PC5790_DonationCapture1_lblTxtYear">&nbsp;/</label>
                                                                     </td>
                                                                     <td>
-                                                                        <select name="PC5790$DonationCapture1$cboYear" id="PC5790_DonationCapture1_cboYear" class="BBFormSelectList DonationCaptureSelectListNarrow" style="height: 30px; width: 250px; border: 1px solid rgb(142, 139, 134); padding: 3px 0px 0px 2px; cursor: pointer; color: rgb(104, 100, 93); border-radius: 0px; background-color: rgb(255, 255, 255);">
+                                                                        <select name="PC5790$DonationCapture1$cboYear" id="year" class="BBFormSelectList DonationCaptureSelectListNarrow" style="height: 30px; width: 250px; border: 1px solid rgb(142, 139, 134); padding: 3px 0px 0px 2px; cursor: pointer; color: rgb(104, 100, 93); border-radius: 0px; background-color: rgb(255, 255, 255);">
                                                                             <option selected="selected" value=""></option>
                                                                             <option value="2016">2016</option>
                                                                             <option value="2017">2017</option>
