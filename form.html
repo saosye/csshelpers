@@ -12,12 +12,10 @@
   <input type="hidden" name="UMrecurring" value="">
   <input type="hidden" name="UMaddcustomer" value="">
   <input type="hidden" name="UMbillamount" value="">
-  <input type="hidden" name="UMcustreceipt" value="yes">
   <input type="hidden" name="UMschedule" value="">
   <input type="hidden" name="UMnumleft" value="">
   <input type="hidden" name="UMstart" value="">
   <input type="hidden" name="UMexpir" id="expire" value="">
-  <input type="hidden" name="UMdescription" value="">
   <input type="hidden" name="UMechofields" value="">
   <input type="hidden" name="UMformString" value="">
     <div id="background">
@@ -148,11 +146,15 @@
                                             <tbody class="BBFormTable DonationCaptureFormTable">
                                                 <tr>
                                                     <td class="BBListingHeading DonationCaptureListingHeading" colspan="3">
-                                                        <span id="PC5790_DonationCapture1_lblBilling">Billing Information<div class="donationaddltext" id="required"><img src="https://httpsimage.com/img/req.png" style="height: 30px; width: 10px;">indicates required field</div></span>
+                                                        <span id="PC5790_DonationCapture1_lblBilling">Billing Information<div class="donationaddltext" ><img src="https://httpsimage.com/img/req.png" style="height: 30px; width: 10px;">indicates required field</div></span>
+                                                        <span><div id="required">
+
+                                                        </div>
+                                                        </span>
                                                     </td>
                                                 </tr>
 
-                                                
+
 
                                                 <tr>
                                                     <td class="BBFieldCaption DonationFieldCaption fc-label fc-radio">
@@ -389,7 +391,7 @@
                                                     </td>
 
                                                     <td id="PC5790_DonationCapture1_AddressCtl_ctl_Country" class="taLeft BBFieldControlCell DonationCaptureFieldControlCell">
-                                                        <select name="UMbillcountry" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;PC5790$DonationCapture1$AddressCtl$dd_Country\&#39;,\&#39;\&#39;)&#39;, 0)" id="PC5790_DonationCapture1_AddressCtl_dd_Country" class="BBFormSelectList DonationCaptureSelectList" style="height: 30px; width: 250px; border: 1px solid rgb(142, 139, 134); padding: 3px 0px 0px 2px; cursor: pointer; color: rgb(104, 100, 93); border-radius: 0px; background-color: rgb(255, 255, 255);">
+                                                        <select name="UMbillcountry" id="PC5790_DonationCapture1_AddressCtl_dd_Country" class="BBFormSelectList DonationCaptureSelectList" style="height: 30px; width: 250px; border: 1px solid rgb(142, 139, 134); padding: 3px 0px 0px 2px; cursor: pointer; color: rgb(104, 100, 93); border-radius: 0px; background-color: rgb(255, 255, 255);">
                                                             <option value="Cambodia">Cambodia</option>
                                                             <option value="China">China</option>
                                                             <option value="GUATEMALA">GUATEMALA</option>
@@ -562,7 +564,8 @@
                                                         <label for="PC5790_DonationCapture1_txtCSC" id="PC5790_DonationCapture1_lblSecCode">Card Security Code:</label>
                                                     </td>
                                                     <td class="BBFieldControlCell DonationCaptureFieldControlCell">
-                                                        <input name="UMcvv2" type="text" maxlength="4" id="PC5790_DonationCapture1_txtCSC" class="BBFormTextbox DonationCaptureTextboxNarrow" autocomplete="off"><a id="PC5790_DonationCapture1_lnkcsc_help" title="Display help for Card Security Codes in another window" class="BBLinkHelpIcon" href="javascript:DonationCSCHelp()">What's this</a>
+                                                        <input name="UMcvv2" type="text" maxlength="4" id="PC5790_DonationCapture1_txtCSC" class="BBFormTextbox DonationCaptureTextboxNarrow" autocomplete="off">
+                                                        <!-- <a id="PC5790_DonationCapture1_lnkcsc_help" title="Display help for Card Security Codes in another window" class="BBLinkHelpIcon" href="javascript:DonationCSCHelp()">What's this</a> -->
                                                     </td>
                                                     <td class="BBFormRequiredFieldMarker DonationCaptureRequiredFieldMarker">
                                                         *</td>
@@ -576,7 +579,7 @@
                                                     </td>
                                                     <td id="PC5790_ParentControl174" class="taLeft">
                                                         <select name="UMcustreceipt" id="PC5790_174" class="BBFormSelectList LoginFormSelectList" style="height: 30px; width: 250px; border: 1px solid rgb(142, 139, 134); padding: 3px 0px 0px 2px; cursor: pointer; color: rgb(104, 100, 93); border-radius: 0px; background-color: rgb(255, 255, 255);">
-                                                            <option selected="selected" value="&lt;Please select&gt;">&lt;Please select&gt;</option>
+                                                            <option selected="selected" value="-1">&lt;Please select&gt;</option>
                                                             <option value="Yes">Yes</option>
                                                             <option value="No">No</option>
 
@@ -661,7 +664,7 @@
                                                         <label for="PC5790_chkCorporate" id="PC5790_lblCorporateCaption">Corporate:</label>
                                                     </td>
                                                     <td colspan="2" class="BBFieldControlCell DonationFieldControlCell">
-                                                        <span class="BBFieldCheckboxCaption DonationFieldCheckboxCaption"><input id="PC5790_chkCorporate" type="checkbox" name="PC5790$chkCorporate" checked="checked" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;PC5790$chkCorporate\&#39;,\&#39;\&#39;)&#39;, 0)"><label for="PC5790_chkCorporate">This donation is on behalf of a company</label></span>
+                                                        <span class="BBFieldCheckboxCaption DonationFieldCheckboxCaption"><input id="PC5790_chkCorporate" type="checkbox" name="PC5790$chkCorporate" checked="checked" ><label for="PC5790_chkCorporate">This donation is on behalf of a company</label></span>
                                                     </td>
                                                 </tr>
                                                 <tr id="PC5790_trAnonymous" style="display: none;">
@@ -752,27 +755,28 @@
                                                   <input name="UMdescription" type="text" maxlength="50" id="PC5790_96" class="BBFormTextbox DonationTextboxWide LoginFormTextbox">
                                               </td>
                                             </tr>
+                                            <tr id="PC5790_trTributeName" style="" class="fc-row  customeight">
+                                        <td id="PC5790_tdTribNameCaption" class="BBFieldCaption DonationFieldCaption fc-required fc-label">
+                                                <label for="PC5790_txtTribute" id="PC5790_lblName">Memorial/Honoree Name:</label>
+                                              </td>
+                                        <td id="PC5790_tdTribNameControls" class="BBFieldControlCell DonationFieldControlCell">
+                                                <input name="UMcustom8" type="text" maxlength="50" id="PC5790_txtTribute" class="BBFormTextbox DonationTextboxWide" >
+
+                                              <span id="PC5790_ReqFldValidatorTribName" style="display:none;"></span></td>
+                                        <td id="PC5790_tdTributeRequiredMarker" class="BBFormRequiredFieldMarker DonationRequiredFieldMarker" style="visibility:visible;">
+                                                *
+                                              </td>
+                                      </tr>
                                             <tbody class="sendcard displayNone">
       <tr class="fc-row">
         <td class="BBMessage DonationMessage" colspan="3">
           <span id="PC5790_lblTributeSectionDescription"></span>
         </td>
       </tr>
-      <tr id="PC5790_trTributeName" style="" class="fc-row tributecard">
-  <td id="PC5790_tdTribNameCaption" class="BBFieldCaption DonationFieldCaption fc-required fc-label">
-          <label for="PC5790_txtTribute" id="PC5790_lblName">Memorial/Honoree Name:</label>
-        </td>
-  <td id="PC5790_tdTribNameControls" class="BBFieldControlCell DonationFieldControlCell">
-          <input name="UMcustom8" type="text" maxlength="50" id="PC5790_txtTribute" class="BBFormTextbox DonationTextboxWide" onkeyup="txtTributeName_KeyUp(this, 'PC5790_tdTributeTypeRequiredMarker');">
 
-        <span id="PC5790_ReqFldValidatorTribName" style="display:none;"></span></td>
-  <td id="PC5790_tdTributeRequiredMarker" class="BBFormRequiredFieldMarker DonationRequiredFieldMarker" style="visibility:visible;">
-          *
-        </td>
-</tr>
 
-<tr id="PC5790_trTributeFirstName" style="" class="fc-row tributecard">
-  <td id="PC5790_tdTributeFirstName" class="BBFieldCaption DonationFieldCaption fc-label">
+<tr id="PC5790_trTributeFirstName" style="" class="fc-row  tributecard">
+  <td id="PC5790_tdTributeFirstName" class="BBFieldCaption DonationFieldCaption fc-required fc-label">
           <label for="PC5790_txtTributeFirstName" id="PC5790_lblTributeFirstName">Fist Name:</label>
         </td>
   <td id="PC5790_tdTributeFirstNameControls" class="BBFieldControlCell DonationFieldControlCell">
@@ -824,7 +828,7 @@
         <td class="BBFieldCaption DonationFieldCaption fc-required fc-label">
         </td>
         <td class="w100p BBFieldControlCell DonationCaptureFieldControlCell">
-          <span class="BBFieldCheckboxCaption DonationFieldCheckboxCaption"><input id="PC5790_chkAcknowledge" type="checkbox" name="PC5790$chkAcknowledge" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'PC5790$chkAcknowledge\',\'\')', 0)"><label for="PC5790_chkAcknowledge">Mail a letter on my behalf</label></span>
+          <span class="BBFieldCheckboxCaption DonationFieldCheckboxCaption"><input id="PC5790_chkAcknowledge" type="checkbox" name="PC5790$chkAcknowledge" checked="checked" ><label for="PC5790_chkAcknowledge">Mail a letter on my behalf</label></span>
         </td>
         <td id="PC5790_tdTributeChkAcknowledgeRequiredMarker" class="BBFormRequiredFieldMarker DonationRequiredFieldMarker" style="visibility: hidden">
           *
@@ -842,8 +846,8 @@
             *
           </td>
 </tr>
-<tr id="PC5790_trAcknowledgeeFirstName" style="display:none;" class="fc-row tributecard">
-  <td id="PC5790_tdAcknowledgeeFirstName" class="BBFieldCaption DonationFieldCaption fc-label">
+<tr id="PC5790_trAcknowledgeeFirstName" style="display:none;" class="fc-row  tributecard">
+  <td id="PC5790_tdAcknowledgeeFirstName" class="BBFieldCaption DonationFieldCaption fc-required fc-label">
             <label for="PC5790_txtAcknowledgeeFirstName" id="PC5790_lblAcknowledgeeFirstName">First name:</label>
           </td>
   <td id="PC5790_tdAcknowledgeeFirstNameControls" class="BBFieldControlCell DonationFieldControlCell">
@@ -868,7 +872,7 @@
   </td>
 
   <td id="PC5790_AddressCtl_ctl_Country" class="taLeft BBFieldControlCell DonationFieldControlCell">
-      <select name="UMcustom13" onchange="javascript:setTimeout('__doPostBack(\'PC5790$AddressCtl$dd_Country\',\'\')', 0)" id="PC5790_AddressCtl_dd_Country" class="BBFormSelectList DonationSelectList" style="height: 30px; width: 250px; border: 1px solid rgb(142, 139, 134); padding: 3px 0px 0px 2px; cursor: pointer; color: rgb(104, 100, 93); border-radius: 0px; background-color: rgb(255, 255, 255);">
+      <select name="UMcustom13" class="BBFormSelectList DonationSelectList" style="height: 30px; width: 250px; border: 1px solid rgb(142, 139, 134); padding: 3px 0px 0px 2px; cursor: pointer; color: rgb(104, 100, 93); border-radius: 0px; background-color: rgb(255, 255, 255);">
   <option value="Cambodia">Cambodia</option>
   <option value="China">China</option>
   <option value="GUATEMALA">GUATEMALA</option>
@@ -1084,21 +1088,21 @@
                                                         *
                                                     </td>
                                                 </tr>
-                                                <tr id="PC5790_trTributeName" style=" " class="fc-row displayNone memorial">
+                                                <!-- <tr id="PC5790_trTributeName" style=" " class="fc-row displayNone memorial">
                                                     <td id="PC5790_tdTribNameCaption" class="BBFieldCaption DonationFieldCaption fc-required fc-label">
                                                         <label for="PC5790_txtTribute" id="PC5790_lblName">Memorial/Honoree Name:</label>
                                                     </td>
                                                     <td id="PC5790_tdTribNameControls" class="BBFieldControlCell DonationFieldControlCell">
-                                                        <input name="PC5790$txtTribute" type="text" maxlength="50" id="PC5790_txtTribute" class="BBFormTextbox DonationTextboxWide" onkeyup="txtTributeName_KeyUp(this, &#39;PC5790_tdTributeTypeRequiredMarker&#39;);">
+                                                        <input name="UMcustom8" type="text" maxlength="50" id="PC5790_txtTribute" class="BBFormTextbox DonationTextboxWide" >
 
                                                         <span id="PC5790_ReqFldValidatorTribName" style="display:none;"></span>
                                                     </td>
                                                     <td id="PC5790_tdTributeRequiredMarker" class="BBFormRequiredFieldMarker DonationRequiredFieldMarker" style="visibility:visible;">
                                                         *
                                                     </td>
-                                                </tr>
+                                                </tr> -->
                                                 <tr id="PC5790_trTributeFirstName" style="display:none;" class="fc-row">
-                                                    <td id="PC5790_tdTributeFirstName" class="BBFieldCaption DonationFieldCaption fc-label">
+                                                    <td id="PC5790_tdTributeFirstName" class="BBFieldCaption DonationFieldCaption fc-required fc-label">
                                                         <label for="PC5790_txtTributeFirstName" id="PC5790_lblTributeFirstName">Fist Name:</label>
                                                     </td>
                                                     <td id="PC5790_tdTributeFirstNameControls" class="BBFieldControlCell DonationFieldControlCell">
@@ -1123,7 +1127,7 @@
                                                     <td class="BBFieldCaption DonationFieldCaption fc-required fc-label">
                                                     </td>
                                                     <td class="w100p BBFieldControlCell DonationCaptureFieldControlCell">
-                                                        <span class="BBFieldCheckboxCaption DonationFieldCheckboxCaption"><input id="PC5790_chkAcknowledge" type="checkbox" name="PC5790$chkAcknowledge" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;PC5790$chkAcknowledge\&#39;,\&#39;\&#39;)&#39;, 0)"><label for="PC5790_chkAcknowledge">Mail a letter on my behalf</label></span>
+                                                        <span class="BBFieldCheckboxCaption DonationFieldCheckboxCaption"><input id="PC5790_chkAcknowledge" type="checkbox" name="PC5790$chkAcknowledge" ><label for="PC5790_chkAcknowledge">Mail a letter on my behalf</label></span>
                                                     </td>
                                                     <td id="PC5790_tdTributeChkAcknowledgeRequiredMarker" class="BBFormRequiredFieldMarker DonationRequiredFieldMarker" style="visibility: hidden">
                                                         *
